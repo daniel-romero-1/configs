@@ -23,7 +23,7 @@ wezterm.on('gui-startup', function(cmd)
   window:gui_window():maximize()
 end)
 
-config.window_close_confirmation = 'NeverPrompt'
+-- config.window_close_confirmation = 'NeverPrompt'
 
 -- config.keys = {
 --   {
