@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"BracketHighlighter",
+		"Compare Side-By-Side",
+		"Debugger",
+		"Emmet",
+		"GitHub Theme",
+		"JsPrettier",
+		"LSP",
+		"LSP-css",
+		"LSP-html",
+		"LSP-json",
+		"LSP-tailwindcss",
+		"LSP-typescript",
+		"Origami",
+		"Package Control",
+		"Quokka",
+		"SideBarEnhancements",
+		"Theme - Spacegray",
+	],
+	"in_process_packages":
+	[
+	],
+}

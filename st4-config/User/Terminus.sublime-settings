@@ -1,0 +1,42 @@
+{
+  "default_config": {
+    "windows": "Git Bash"
+  },
+  "shell_configs": [
+    {
+      "name": "Git Bash",
+      "cmd": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-i",
+        "-l"
+      ],
+      "env": {},
+      "enable": true,
+      "platforms": [
+        "windows"
+      ]
+    },
+  ],
+  "view_settings": {
+    "font_face": "JetbrainsMono Nerd"
+  }
+}
+
+// {
+//   "default_config": {
+//     "windows": "Windows Terminal"
+//   },
+//   "shell_configs": [
+//     {
+//       "name": "Windows Terminal",
+//       "cmd": [
+//         "C:\\Users\\Daniel\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+//       ],
+//       "env": {},
+//       "enable": true,
+//       "platforms": [
+//         "windows"
+//       ]
+//     },
+//   ],
+// }

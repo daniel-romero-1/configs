@@ -1,0 +1,144 @@
+[
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+  { "keys": ["ctrl+pagedown"], "command": "next_view_in_stack" },
+  { "keys": ["ctrl+pageup"], "command": "prev_view_in_stack" },
+
+  { "keys": ["alt+shift+down"], "command": "duplicate_line" },
+
+  { "keys": ["alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+  { "keys": ["ctrl+alt+left"], "command": "jump_back" },
+  { "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+
+  { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "context":
+    [
+      { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+    ],
+  },
+  { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}
+  },
+
+  { "keys": ["alt+s"], "command": "show_overlay", "args": { "overlay": "command_palette", "text": "Snippet: " } },
+
+  // LSP
+  {
+    "keys": ["f1"],
+    "command": "show_overlay",
+    "args": {"overlay": "command_palette", "text": "LSP: "}
+  },
+  // Run Code Action
+  {
+    "keys": ["alt+f2"],
+    "command": "lsp_code_actions",
+    "context": [{"key": "lsp.session_with_capability", "operand": "codeActionProvider"}]
+  },
+  // Run Source Actions
+  {
+    "keys": ["ctrl+f2"],
+    "command": "lsp_code_actions",
+    "args": {"only_kinds": ["source"]},
+    "context": [{"key": "lsp.session_with_capability", "operand": "codeActionProvider.codeActionKinds"}]
+  },
+  // Run Code Lens
+  {
+    "keys": ["ctrl+f1"],
+    "command": "lsp_code_lens",
+    "context": [{"key": "lsp.session_with_capability", "operand": "codeLensProvider"}]
+  },
+  // Find References
+  {
+    "keys": ["shift+f12"],
+    "command": "lsp_symbol_references",
+    "args": {"side_by_side": false, "force_group": true, "fallback": false, "group": -1, "include_declaration": false},
+    "context": [{"key": "lsp.session_with_capability", "operand": "referencesProvider"}]
+  },
+  // Find References (side-by-side)
+  {
+    "keys": ["primary+shift+f12"],
+    "command": "lsp_symbol_references",
+    "args": {"side_by_side": true, "force_group": true, "fallback": false, "group": -1},
+    "context": [{"key": "lsp.session_with_capability", "operand": "referencesProvider"}]
+  },
+  // Goto Definition
+  {
+    "keys": ["f12"],
+    "command": "lsp_symbol_definition",
+    "args": {"side_by_side": false, "force_group": true, "fallback": false, "group": -1},
+    "context": [
+      {"key": "lsp.session_with_capability", "operand": "definitionProvider"},
+      {"key": "auto_complete_visible", "operand": false}
+    ]
+  },
+  // Goto Definition (side-by-side)
+  {
+    "keys": ["primary+f12"],
+    "command": "lsp_symbol_definition",
+    "args": {"side_by_side": true, "force_group": true, "fallback": false, "group": -1},
+    "context": [
+      {"key": "lsp.session_with_capability", "operand": "definitionProvider"},
+      {"key": "auto_complete_visible", "operand": false}
+    ]
+  },
+  // Goto Diagnostic
+  {
+    "keys": ["f8"],
+    "command": "lsp_goto_diagnostic",
+    "args": {"uri": "$view_uri"}
+  },
+  // Goto Diagnostic in Project
+  {
+    "keys": ["shift+f8"],
+    "command": "lsp_goto_diagnostic"
+  },
+  // Format File (USING JSPRETTIER NOW)
+  // {
+  //   "keys": ["alt+f"],
+  //   "command": "lsp_format_document",
+  //   "context": [{"key": "lsp.session_with_capability", "operand": "documentFormattingProvider | documentRangeFormattingProvider"}]
+  // },
+  // Document Symbols (a replacement for ST's "Goto Symbol")
+  {
+    "keys": ["primary+r"],
+    "command": "lsp_document_symbols",
+    "context": [{"key": "lsp.session_with_capability", "operand": "documentSymbolProvider"}]
+  },
+  // Workspace Symbols (a replacement for ST's "Goto Symbol In Project")
+  {
+    "keys": ["primary+shift+r"],
+    "command": "lsp_workspace_symbols",
+    "context": [{"key": "lsp.session_with_capability", "operand": "workspaceSymbolProvider"}]
+  },
+  // Hover Popup
+  {
+    "keys": ["f2"],
+    "command": "lsp_hover",
+    "context": [{"key": "lsp.session_with_capability", "operand": "hoverProvider"}]
+  },
+  // Show Call Hierarchy
+  {
+    "keys": ["alt+f12"],
+    "command": "lsp_call_hierarchy",
+    "context": [{"key": "lsp.session_with_capability", "operand": "callHierarchyProvider"}]
+  },
+  // Show Type Hierarchy
+  {
+    "keys": ["ctrl+f12"],
+    "command": "lsp_type_hierarchy",
+    "context": [{"key": "lsp.session_with_capability", "operand": "typeHierarchyProvider"}]
+  },
+  // Expand Selection (a replacement for ST's "Expand Selection")
+  {
+    "keys": ["alt+shift+up"],
+    "command": "lsp_expand_selection",
+    "args": {"fallback": false},
+    "context": [{"key": "lsp.session_with_capability", "operand": "selectionRangeProvider"}]
+  },
+
+  // JsPrettier
+  { "keys": ["alt+f"], "command": "js_prettier" }
+]

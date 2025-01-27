@@ -1,0 +1,13 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+  "lsp_format_on_paste": false,
+  "lsp_format_on_save": false,
+  "show_inlay_hints": true,
+  "lsp_code_actions_on_save": {
+    "source.organizeImports": true,
+  },
+  "show_code_actions": "",
+  "show_diagnostics_annotations_severity_level": 4,
+  "show_diagnostics_panel_on_save": 0,
+  "document_highlight_style": "outline"
+}

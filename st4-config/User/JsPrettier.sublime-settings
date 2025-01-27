@@ -1,0 +1,23 @@
+// Settings in here override those in "/JsPrettier/JsPrettier.sublime-settings",
+{
+  "auto_format_on_save": false,
+  "auto_format_on_save_excludes": [
+    "*/node_modules/*",
+    "*.json"
+  ],
+  "auto_format_on_save_requires_prettier_config": false,
+  "allow_inline_formatting": true,
+  "prettier_options": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "jsxSingleQuote": false,
+    "semi": false,
+    "arrowParens": "always",
+    "singleAttributePerLine": true,
+    "useTabs": false,
+  }
+}

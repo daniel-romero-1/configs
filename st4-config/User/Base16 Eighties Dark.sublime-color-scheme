@@ -1,0 +1,13 @@
+{
+	"globals": {
+		"caret": "var(base0A)",
+		"brackets_foreground": "var(base0A)",
+	},
+	"rules":
+	[
+		{
+			"foreground": "#fff",
+			"scope": "quokka",
+		}
+	]
+}

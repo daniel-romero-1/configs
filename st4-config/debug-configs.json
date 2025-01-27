@@ -1,0 +1,23 @@
+{
+  "NODE PROJECT": {
+    "type": "node",
+    "request": "launch",
+    "name": "Launch Program",
+    "skipFiles": ["<node_internals>/**"],
+    "program": "${workspaceFolder}/bel.js"
+  },
+  "REACT PROJECT": {
+    "name": "Launch localhost",
+    "type": "chrome",
+    "request": "launch",
+    "url": "http://localhost:5173",
+    "webRoot": "${workspaceFolder}/rick/src"
+  },
+  "WEB PROJECT": {
+    "type": "chrome",
+    "request": "launch",
+    "name": "Launch Chrome against localhost",
+    "url": "http://localhost:5500",
+    "file": "${workspaceFolder}/index.html"
+  }
+}

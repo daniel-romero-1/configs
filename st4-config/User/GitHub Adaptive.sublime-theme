@@ -1,0 +1,11 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+  "variables":
+  {
+    "sidebarBackground": "color(var(foreground) blend(var(background) 0%)))",
+    "vcsModified": "#ffcc66",
+  },
+  "rules":
+  [
+  ]
+}
